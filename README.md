@@ -18,5 +18,5 @@ setup-all-containers.sh
 
 TODO's:
 1) Use the ENV's in the docker compose files to make it easier to deploy the server.
-2) Make an install script.
+2) Fix the install script.
 3) Fix any errors that pop up.
