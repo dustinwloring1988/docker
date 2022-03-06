@@ -22,12 +22,6 @@ below is the file and folder structor
 
 docker
   |
-  |--->auth
-        |--->Authelia-CONF
-        |--->Protected-Domain-CONF
-        |--->configuration.yml
-        |--->docker-compose.yml
-        |--->users_database.yml
   |--->ddns
         |--->docker-compose.yml
   |--->f2b
