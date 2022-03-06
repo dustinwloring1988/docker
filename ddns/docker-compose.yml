@@ -1,0 +1,8 @@
+version: '2'
+services:
+  cloudflare-ddns:
+    image: oznu/cloudflare-ddns
+    environment:
+      - API_KEY=TheAPIkeyYouGotFromCloudFlare
+      - ZONE=yoursite.com
+    restart: always

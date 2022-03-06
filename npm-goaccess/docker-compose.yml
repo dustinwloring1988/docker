@@ -1,0 +1,13 @@
+goaccess:
+    image: xavierh/goaccess-for-nginxproxymanager:latest
+    container_name: goaccess
+    restart: always
+    volumes:
+        - /docker/npm/nginx/logs:/opt/log
+    ports:
+        - '7880:7880'
+    environment:
+        - PUID=998
+        - PGID=1000
+        - TZ=America/New_York        
+        - SKIP_ARCHIVED_LOGS=False #optional 
