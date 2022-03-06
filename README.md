@@ -1,4 +1,4 @@
-# NPM Repo
+# Docker Server Setup ( Nginx Proxy Manager - Server Setup )
 Starting a repo to make deploying my NPM server easy.
 
 # Install
