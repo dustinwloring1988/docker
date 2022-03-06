@@ -17,6 +17,6 @@ setup-all-containers.sh
 ```
 
 TODO's:
-1) Update teh docker-compose files to use the .env file to make it easier to deploy the server.
+1) Update the docker-compose files to use the .env file to make it easier to deploy the server.
 2) Fix the install script.
 3) Fix any errors that pop up.
