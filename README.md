@@ -3,7 +3,7 @@ Starting a repo to make deploying my NPM server easy.
 
 # Install
 ```sh
-git clone https://github.com/dustinwloring1988/npm
+git clone https://github.com/dustinwloring1988/docker
 cd npm/docker
 # If you do not have docker and dopcker compose installed run this the server will restart at the end though
 install-docker.sh
