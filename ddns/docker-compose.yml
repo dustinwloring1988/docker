@@ -3,6 +3,6 @@ services:
   cloudflare-ddns:
     image: oznu/cloudflare-ddns
     environment:
-      - API_KEY=TheAPIkeyYouGotFromCloudFlare
-      - ZONE=yoursite.com
+      - API_KEY=${CLOUDFLARE_API_KEY}
+      - ZONE=${CLOUDFLARE_ZONE}
     restart: always
