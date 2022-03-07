@@ -2,7 +2,7 @@ version: "3.7"
 services:
   fail2ban:
     image: crazymax/fail2ban:latest
-    container_name: fail2ban_docker-pi
+    container_name: fail2ban_docker
     network_mode: "host"
     cap_add:
       - NET_ADMIN
@@ -13,13 +13,13 @@ services:
       - "/home/docker/nginx-proxy-manager/data/logs/:/log/npm/:ro"
     restart: always
     environment:
-      - TZ=Europe/Paris
-      - F2B_LOG_TARGET=STDOUT
-      - F2B_LOG_LEVEL=INFO
-      - F2B_DB_PURGE_AGE=1d
-      - SSMTP_HOST=smtp.example.com
-      - SSMTP_PORT=587
-      - SSMTP_HOSTNAME=example.com
-      - SSMTP_USER=smtp@example.com
-      - SSMTP_PASSWORD=
-      - SSMTP_TLS=YES
+      - TZ=${TZ}
+      - F2B_LOG_TARGET=${FAIL2BAN_LOG_TARGET}
+      - F2B_LOG_LEVEL=${FAIL2BAN_LOG_LEVEL}
+      - F2B_DB_PURGE_AGE=${FAIL2BAN_DB_PURGE_AGE}
+      - SSMTP_HOST=${SMTP_HOST}
+      - SSMTP_PORT=${SMTP_PORT}
+      - SSMTP_HOSTNAME=${SMTP_HOSTNAME}
+      - SSMTP_USER=${SMTP_USER}
+      - SSMTP_PASSWORD=${SMTP_PASSWORD}
+      - SSMTP_TLS=${SMTP_TLS}
