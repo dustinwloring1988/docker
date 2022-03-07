@@ -7,7 +7,7 @@ goaccess:
     ports:
         - '7880:7880'
     environment:
-        - PUID=998
-        - PGID=1000
-        - TZ=America/New_York        
+        - PUID=${MY_PUID}
+        - PGID=${MY_PGID}
+        - TZ=${TZ}        
         - SKIP_ARCHIVED_LOGS=False #optional 
