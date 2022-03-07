@@ -22,6 +22,7 @@ setup-all-containers.sh
 3) Fix any errors that pop up.
 
 # Tree View
+Below is the tree view
 </br>
 </br>
 ![tree](https://github.com/dustinwloring1988/docker/blob/main/resources/tree.PNG)
