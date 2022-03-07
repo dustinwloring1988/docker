@@ -16,7 +16,12 @@ cp example.env .env
 setup-all-containers.sh
 ```
 
-TODO's:
+# TODO's:
 1) Update the docker-compose files to use the .env file to make it easier to deploy the server.
 2) Fix the install script.
 3) Fix any errors that pop up.
+
+# Tree View
+</br>
+</br>
+![tree](https://github.com/dustinwloring1988/docker/blob/main/resources/tree.PNG)
